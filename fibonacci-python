@@ -1,0 +1,21 @@
+                #METHOD -1
+def f(n):
+    if n==0:
+        return 0
+    elif n==1:
+        return 1
+    else:
+        return f(n-1) + f(n-2)
+n = int(input("ENTER "))
+print(f(n))
+                    #METHOD-2
+def f(n,d):
+    if n in d:
+        return d[n]
+    else:
+        return f(n-1,d) + f(n-2, d)
+n = int(input(" ENTER: " ))
+d = {0:0, 1: 1}
+print(f(n,d))
+
+
