@@ -1,0 +1,10 @@
+#tracking cursor pointer: it's position and printing what color there is.
+import pyautogui as pt
+from time import sleep
+
+while True:
+    posXY = pt.position()
+    print(posXY, pt.pixel(posXY[0], posXY[1]))
+    sleep(0.5)
+    if posXY[0] == 0 or posXY[1]==0:
+        break
